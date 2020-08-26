@@ -7,6 +7,9 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import Contacts from '@material-ui/icons/Contacts';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+import Map from '@material-ui/icons/Map';
 import './Tabs.scss'
 
 function TabPanel(props) {
@@ -75,9 +78,9 @@ export default function FullWidthTabs() {
           variant="fullWidth"
           aria-label="full width tabs example"
         >
-          <Tab label="Sobre Mi" {...a11yProps(0)} />
-          <Tab label="Dirección" {...a11yProps(1)} />
-          <Tab label="Contacto" {...a11yProps(2)} />
+          <Tab icon={<AccountCircle />} aria-label="AccountCircle" label="Sobre Mi" {...a11yProps(0)} />
+          <Tab icon={<Map />} aria-label="Map" label="Dirección" {...a11yProps(1)} />
+          <Tab icon={<Contacts />} aria-label="Contacts" label="Contacto" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
