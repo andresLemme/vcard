@@ -89,7 +89,7 @@ export default function FullWidthTabs() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          <p>El Servicio de Clínica Médica está compuesto por un equipo de profesionales que brinda asistencia médica a pacientes que consultan de manera ambulatoria (en consultorios externos), o que requieren internación por enfermedades agudas y crónicas (en sala general e internación transitoria), y realiza el seguimiento de aquellos enfermos, quirúrgicos y no quirúrgicos, que por su gravedad  o alto riesgo precisaron ingresar en cuidados críticos y resolvieron su cuadro.</p>
+          <p>El Servicio de Clínica Médica está compuesto por un equipo de profesionales que brinda asistencia médica a pacientes que consultan de manera ambulatoria (en consultorios externos), o que requieren internación por enfermedades agudas y crónicas.</p>
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
           Item Two
