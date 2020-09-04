@@ -4,6 +4,7 @@
   margin: 0;
   font-size: 15px;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
   
 
  
@@ -22,4 +23,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face{
+  font-family: Roboto;
+  src: url("../src/Fonts/Roboto-Regular.ttf");
 }
