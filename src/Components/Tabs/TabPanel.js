@@ -92,10 +92,14 @@ export default function FullWidthTabs() {
           <p>El Servicio de Clínica Médica está compuesto por un equipo de profesionales que brinda asistencia médica a pacientes que consultan de manera ambulatoria (en consultorios externos), o que requieren internación por enfermedades agudas y crónicas.</p>
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          Item Two
+        <p>Dirección</p>
+        <p>Billinghurst 2356 PB 1</p>
+        <p>Barrio de Palermo | Capital Federal</p>
+        <p>Aquí va el mapa</p>
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          Item Three
+          <p>Email:</p>
+          <a href="sesantamconsult@gmail.com" target="_blank">sesantamconsult@gmail.com</a>
         </TabPanel>
       </SwipeableViews>
     </div>
