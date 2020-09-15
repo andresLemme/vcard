@@ -5,8 +5,9 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
-import ImageIcon from '@material-ui/icons/Image';
-import WorkIcon from '@material-ui/icons/Work';
+import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
+import PhoneIcon from '@material-ui/icons/Phone';
+import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 import Divider from '@material-ui/core/Divider';
 import './inseetDividers.scss'
@@ -29,29 +30,29 @@ export default function InsetDividers(props) {
       <ListItem key="Phone" component="a" href="tel:+5491131072033" >
         <ListItemAvatar>
           <Avatar>
-            <ImageIcon />
+            <PhoneIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Teléfono Consultorio" secondary="11 4123 - 3434" />
+        <ListItemText primary="Teléfono Consultorio" secondary="4407-9488" />
       </ListItem>
       <Divider variant="inset" component="li" />
-      <ListItem key="Email" component="a" href="mailto:name@email.com" >
+      <ListItem key="Email" component="a" href="mailto:sesantamconsult@gmail.com" >
         <ListItemAvatar>
           <Avatar>
-            <WorkIcon />
+            <AlternateEmailIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText  primary="Email" secondary="sebastian@gmail.com"  />
+        <ListItemText  primary="Email" secondary="sesantamconsult@gmail.com"  />
           
       </ListItem>
       <Divider variant="inset" component="li" />
-      <ListItem key="Phone" component="a" href="https://api.whatsapp.com/send?phone=541131072033&amp;text=hola,%20me%20gustaría%20recibir%20mas%20información%20" >
+      <ListItem key="Phone" component="a" href="https://api.whatsapp.com/send?phone=5491144079488" >
         <ListItemAvatar>
           <Avatar>
-            <BeachAccessIcon />
+            <PhoneIphoneIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Celular" secondary="11 3102 2033" />
+        <ListItemText primary="Celular" secondary="+54 9 11 4407-9488" />
       </ListItem>
     </List>
   );
