@@ -52,7 +52,7 @@ function a11yProps(index) {
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    width: 700,
+    // width: 700,
     backgroundColor: theme.palette.background.paper,
     
   },
@@ -71,7 +71,7 @@ export default function FullWidthTabs() {
     setValue(index);
   };
    
-  const MapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=${Credentials.mapsKey}`
+  
 
   return (
     <div className="material-box">
@@ -107,12 +107,7 @@ export default function FullWidthTabs() {
         <p className="info-style-d">18 hs a 21 hs</p>
 
 
-          {/* <Maps
-            googleMapURL= {MapURL}
-            containerElement={<div style={{height:'100px'}} />}
-            mapElement={<div style={{height:'100%'}} />}
-            landingElement={<p>Cargando</p>}
-          />       */}
+       
         </TabPanel>
         
         <TabPanel value={value} index={2} dir={theme.direction}>
