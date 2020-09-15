@@ -52,7 +52,7 @@ function a11yProps(index) {
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    marginTop: 135px,
+    marginTop: 135,
     // width: 700,
     backgroundColor: theme.palette.background.paper,
     
@@ -76,7 +76,7 @@ export default function FullWidthTabs() {
 
   return (
     <div className="material-box">
-      <div className={classes.root "material-info"}>
+      <div className={classes.root}>
       <AppBar position="static" color="default">
         <Tabs
           value={value}
