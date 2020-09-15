@@ -1,21 +1,21 @@
 .material-box{
   display: inline-flex;
-     .jss1 {
-    width: 90% !important; 
+  .makeStyles-root-1 {
+    width: 90% !important;
     background-color: #fff !important;
     display: inline-grid !important;
     margin-top: 135px !important;
     
   }
   .MuiBox-root {
-    padding: 15px 0;
+    padding: 15px 0 !important;
   }
   .info-style-t{
     font-size: 1rem;
     font-weight: 400;
   }
   .info-style-d, .description{
-    font-size: 0.875rem;;
+    font-size: 0.875rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.54);
     line-height: 25px;
