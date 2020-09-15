@@ -5,7 +5,6 @@ import InnerCard from '../InnerCard/InnerCard'
 function Card(){
   return(
     <section className="card-box">
-     
       <InnerCard/>
     </section>
   )

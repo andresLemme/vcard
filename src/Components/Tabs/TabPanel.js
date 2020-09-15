@@ -11,6 +11,10 @@ import Contacts from '@material-ui/icons/Contacts';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import Map from '@material-ui/icons/Map';
 import './Tabs.scss'
+import Maps from '../Maps/Maps';
+import Credentials from '../Credentials/Credentials'
+import InsetDividers from '../Divider/InsetDividers'
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -49,6 +53,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
     width: 700,
+    backgroundColor: theme.palette.background.paper,
     
   },
 }));
@@ -65,6 +70,8 @@ export default function FullWidthTabs() {
   const handleChangeIndex = (index) => {
     setValue(index);
   };
+   
+  const MapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=${Credentials.mapsKey}`
 
   return (
     <div className="material-box">
@@ -89,20 +96,32 @@ export default function FullWidthTabs() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          <p>El Servicio de Clínica Médica está compuesto por un equipo de profesionales que brinda asistencia médica a pacientes que consultan de manera ambulatoria (en consultorios externos), o que requieren internación por enfermedades agudas y crónicas.</p>
+          <p className="description">El Servicio de Clínica Médica está compuesto por un equipo de profesionales que brinda asistencia médica a pacientes que consultan de manera ambulatoria (en consultorios externos), o que requieren internación por enfermedades agudas y crónicas o que requieren internación por enfermedades agudas y crónicas. o que requieren internación por enfermedades agudas y crónicas</p>
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-        <p>Dirección</p>
-        <p>Billinghurst 2356 PB 1</p>
-        <p>Barrio de Palermo | Capital Federal</p>
-        <p>Aquí va el mapa</p>
+        <p className="info-style-t">Consultorio Médico</p>
+        <p className="info-style-d">Billinghurst 2356 PB 1</p>
+        <p className="info-style-d">Capital Federal</p>
+        <p className="info-style-t">Horarios de atención</p>
+        <p className="info-style-d">Lunes a Viernes</p>
+        <p className="info-style-d">18 hs a 21 hs</p>
+
+
+          {/* <Maps
+            googleMapURL= {MapURL}
+            containerElement={<div style={{height:'100px'}} />}
+            mapElement={<div style={{height:'100%'}} />}
+            landingElement={<p>Cargando</p>}
+          />       */}
         </TabPanel>
+        
         <TabPanel value={value} index={2} dir={theme.direction}>
-          <p>Email:</p>
-          <a href="sesantamconsult@gmail.com" target="_blank">sesantamconsult@gmail.com</a>
+                <InsetDividers />
         </TabPanel>
       </SwipeableViews>
+      
     </div>
     </div>
+    
   );
 }
